@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <b>Hari Narayan Das.</b>
+                    <b>Hari Narayan Das.</b><br>
                     Mobile: 9635212811<br>
                     Email:  hndas15@gmail.com
                 </div>
