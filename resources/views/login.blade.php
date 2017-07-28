@@ -14,12 +14,12 @@
 		<div class="panel panel-primary">
 		  	<div class="panel-heading">Login Form</div>
 		  	<div class="panel-body">
-		  			{{-- @if(session()->has('error'))
+		  			@if(session()->has('error'))
 						<div class="alert alert-danger">
 	  						<strong>Error! {{session()->get('error')}}</strong>
 	  						{{session()->forget('error')}}
 						</div>
-					@endif --}}
+					@endif
 					{{-- @if(count($errors) > 0)
 						@foreach($errors->all() as $error)
 							<li class="alert alert-danger">{{$error}}</li>
