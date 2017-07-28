@@ -11,14 +11,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li><a href="{!! url('/dashboard') !!}">Dashboard</a></li> <!-- class="active" -->
-            {{-- <li><a href="{!! url('/students') !!}">Students</a></li> <!-- class="active" -->
-            <li><a href="{!! url('/subject') !!}">Subjects</a></li>
-            <li><a href="{!! url('/classDetails') !!}">Classes</a></li>
-            <li><a href="{!! url('/test2') !!}">Stu-Sub-Marks</a></li>
-            <li><a href="{!! url('/test') !!}">Marks Entry</a></li>            
-            <li><a href="{!! url('/reportDetails') !!}">Reports</a></li>
-            <li><a href="{!! url('/selectSubjectPdf') !!}">Pdf Subject</a></li>
-            <li><a href="{!! url('/studentRoll') !!}">Update Student Roll </a></li> --}}
+            
           </ul>
 
           @if(session()->has('user'))
