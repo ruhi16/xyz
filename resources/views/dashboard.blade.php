@@ -1,6 +1,6 @@
 @extends('layouts.baselayout')
 @section('title','Dashboard')
-
+	@include('layouts.navbar')
 @section('header')
 	
 @endsection

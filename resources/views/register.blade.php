@@ -2,7 +2,7 @@
 @section('title','Home Page')
 
 @section('header')
-	
+	@include('layouts.navbar')	
 @endsection
 
 @section('content')
