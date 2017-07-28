@@ -2,7 +2,7 @@
 @section('title','Home')
 
 @section('header')
-	@include('layouts.navbar')
+	<!-- @include('layouts.navbar') -->
 @endsection
 
 @section('content')
