@@ -79,7 +79,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Hari Narayan Das
+                    <br>9635212811
                 </div>
 
                 <div class="links">
