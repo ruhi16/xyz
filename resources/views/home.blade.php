@@ -2,7 +2,7 @@
 @section('title','Home')
 
 @section('header')
-	
+	@include('layouts.navbar')
 @endsection
 
 @section('content')
@@ -32,5 +32,5 @@ layouts.baselayout
 
 
 @section('footer')
-	
+	@include('layouts.footer')
 @endsection
