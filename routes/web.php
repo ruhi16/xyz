@@ -12,5 +12,35 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+Route::get('/home', function () {
+    return view('home');
+});
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+
+Route::post('/register-submit', 'AdminController@registerSubmit');
+Route::post('/login-submit', 'AdminController@loginSubmit');
+
+Route::group(['middleware' => 'admin'], function(){
+		Route::get('/dashboard', function () {
+    		return view('dashboard');
+		});
+
+
+		Route::get('/logout',function(){
+			session()->flush();
+		    return redirect()->to('/home');
+		});
+
+
+
+});
+
