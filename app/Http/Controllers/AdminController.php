@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use App\User;
+
 use App\Http\Requests\LoginValidation;
 use App\Http\Requests\RegisterValidation;
 
@@ -50,5 +51,10 @@ class AdminController extends Controller
             session()->put('error','Email or Password does not matched');
             return redirect()->to('/login');            
         } 
+    }
+
+    public function dashboard(){
+        $users = User::all();
+        return view('/dashboard')->with('users', $users);
     }
 }

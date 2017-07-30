@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,9 +31,7 @@ Route::post('/register-submit', 'AdminController@registerSubmit');
 Route::post('/login-submit', 'AdminController@loginSubmit');
 
 Route::group(['middleware' => 'admin'], function(){
-		Route::get('/dashboard', function () {
-    		return view('dashboard');
-		});
+		Route::get('/dashboard', 'AdminController@dashboard');
 
 
 		Route::get('/logout',function(){
