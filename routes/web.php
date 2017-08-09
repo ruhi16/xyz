@@ -25,6 +25,9 @@ Route::get('/register', function () {
     return view('register');
 });
 
+Route::get('/abcde', function(){
+	return view('settings.abcd');
+});
 
 Route::post('/register-submit', 'AdminController@registerSubmit');
 Route::post('/login-submit', 'AdminController@loginSubmit');
