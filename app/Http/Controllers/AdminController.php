@@ -30,7 +30,7 @@ class AdminController extends Controller
 			$user->save();
 
 	   		session()->put('error','Successfully User Registered.');
-	    	return redirect()->to('/home');
+	    	return redirect()->to('/login');
 
     	}else{
     		session()->put('error','Password does not matched!');
