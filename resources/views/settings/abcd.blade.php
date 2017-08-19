@@ -6,83 +6,73 @@
 @endsection
 
 @section('content')
-<h1>ABCDE</h1>
-
 <div class="container">
-    <div class="row">
-		<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Click here for list</button>
-		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-			<div class="modal-dialog modal-lg">
-				<div class="modal-content">
-					<div id="custom-search-input">
-						<div class="input-group col-md-12">
-							<input id="search" type="text" class="form-control input-lg" placeholder="Search" />
-							<span class="input-group-btn">
-								<button class="btn btn-info btn-lg" type="button">
-									<i class="glyphicon glyphicon-search"></i>
-								</button>
-							</span>
-						</div>
-						<ul class="list-group">
-							<li class="list-group-item">Cras justo odio</li>
-							<li class="list-group-item">Dapibus ac facilisis in</li>
-							<li class="list-group-item">Morbi leo risus</li>
-							<li class="list-group-item">Porta ac consectetur ac</li>
-							<li class="list-group-item">Vestibulum at eros</li><li class="list-group-item">Cras justo odio</li>
-							<li class="list-group-item">Dapibus ac facilisis in</li>
-							<li class="list-group-item">Morbi leo risus</li>
-							<li class="list-group-item">Porta ac consectetur ac</li>
-							<li class="list-group-item">Vestibulum at eros</li><li class="list-group-item">Cras justo odio</li>
-							<li class="list-group-item">Dapibus ac facilisis in</li>
-							<li class="list-group-item">Morbi leo risus</li>
-							<li class="list-group-item">Porta ac consectetur ac</li>
-							<li class="list-group-item">Vestibulum at eros</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 
-<br>
+<h1 class="page-header">Settings...</h1>
 
-<select class="selectpicker" data-live-search="true">
-     <option>Mustard</option>
-      <option>Ketchup</option>
-      <option>Relish</option>
-</select>
+{{-- <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="...">
+      </a>
+    </div>
+  </div>
+</nav>
+ --}}	
+
+<ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Library</a></li>
+  <li class="active">Data</li>
+</ol>
+
+ <div class="row">
+		<div class="col-md-3">		
+	          <div class="list-group">
+	            <a href="#" class="list-group-item active">Link</a>
+	            <a href="#" class="list-group-item">Link</a>
+	            <a href="#" class="list-group-item">Link</a>
+	            <a href="#" class="list-group-item">Link</a>
+	            <a href="#" class="list-group-item">Link</a>
+	            <a href="#" class="list-group-item">Link</a>
+	            <a href="#" class="list-group-item">Link</a>
+	            <a href="#" class="list-group-item">Link</a>
+	            <a href="#" class="list-group-item">Link</a>
+	            <a href="#" class="list-group-item">Link</a>
+	          </div>        
+	    </div><!--/1st Column-->
+
+       	<div class="col-md-9">
+       		<div class="jumbotron">
+           		<h1>Hello, world!</h1>
+           		<p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+        	</div><!--/Jumbotron-->
 
 
-<script type="text/javascript">
-	 $('.selectpicker').selectpicker({
-      style: 'btn-info',
-      size: 4
-  });
-</script>
+		
+			<div class="row-fluid">
+		      <select class="selectpicker" data-show-subtext="true" data-live-search="true">
+		        <option data-subtext="Rep California">Tom Foolery</option>
+		        <option data-subtext="Sen California">Bill Gordon</option>
+		        <option data-subtext="Sen Massacusetts">Elizabeth Warren</option>
+		        <option data-subtext="Rep Alabama">Mario Flores</option>
+		        <option data-subtext="Rep Alaska">Don Young</option>
+		        <option data-subtext="Rep California" disabled="disabled">Marvin Martinez</option>
+		        
+		      </select>     
+		    </div>
 
 
-<script type="text/javascript">
-
-$(function(){
-	$('#search').keyup(function(){	
-		var current_query = $('#search').val();
-		if (current_query !== "") {
-			$(".list-group li").hide();
-			$(".list-group li").each(function(){
-				var current_keyword = $(this).text();
-				if (current_keyword.indexOf(current_query) >=0) {
-					$(this).show();    	 	
-				};
-			});    	
-		} else {
-			$(".list-group li").show();
-		};
-	});
-});
 
 
-</script>
+       	</div><!--/2nd column-->
+  	</div><!--/row-->
+</div><!--/container-->
+
+
+
+
 
 
 
