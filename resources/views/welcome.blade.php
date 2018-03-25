@@ -84,8 +84,6 @@
                 </div><br><br>
                 <div class="title m-b-md">
                     <b>Hari Narayan Das.</b><br>
-                    Ayantika Das.<br>
-                    Arpan Paul.
                     Mobile: 9635212811<br>
                     Email:  hndas15@gmail.com
 
