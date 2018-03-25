@@ -20,7 +20,24 @@
   </div>
 </nav>
  --}}	
-
+{{--  <table class="table table-bordered">
+<tr>	
+		<th>Name		</th>
+		<th>Email		</th>
+		<th>md5('encoding')</th>
+		<th>Password	</th>
+		<th>User Role</th>
+</tr>
+@foreach($users as $user)
+	<tr>
+		<td>{{$user->name}}</td>
+		<td>{{$user->email}}</td>
+		<td>{{$user->password}}</td>
+		<td>{{'asdf'}}</td>
+		<td>{{session()->get('role')}}</td>
+	</tr>
+@endforeach
+</table>  --}}
 <ol class="breadcrumb">
   <li><a href="#">Home</a></li>
   <li><a href="#">Library</a></li>

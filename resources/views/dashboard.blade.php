@@ -11,15 +11,19 @@
 
 <table class="table table-bordered">
 <tr>	
-		<td>Name		</td>
-		<td>md5('encoding')</td>
-		<td>Password	</td>
+		<th>Name		</th>
+		<th>Email		</th>
+		<th>md5('encoding')</th>
+		<th>Password	</th>
+		<th>User Role</th>
 </tr>
 @foreach($users as $user)
 	<tr>
 		<td>{{$user->name}}</td>
+		<td>{{$user->email}}</td>
 		<td>{{$user->password}}</td>
 		<td>{{'asdf'}}</td>
+		<td>{{session()->get('role')}}</td>
 	</tr>
 @endforeach
 </table>

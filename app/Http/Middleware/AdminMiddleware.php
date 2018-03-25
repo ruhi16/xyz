@@ -16,9 +16,18 @@ class AdminMiddleware
     public function handle($request, Closure $next)
     {
         if(session()->has('user')){
-            return $next($request);    
+
+            if(session()->get('role')=='Admin')
+                return $next($request);
+            else {
+                session()->put('error','User\'s Role does not match!!!');
+                return redirect()->to('/login');    
+            }
+            
+
         }
         else{
+            session()->put('error','User Not Found!!!');
             return redirect()->to('/login');
         }       
         

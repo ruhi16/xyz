@@ -21,7 +21,7 @@ class AdminController extends Controller
 	    	return redirect()->to('/register');
     	}
 
-    	if($request->password == $request->confpassword){	
+    	if($request->password == $request->confpassword){
 	    	$user = new User;
 			$user->name 	= $request->name;
 			$user->email 	= $request->email;
@@ -43,14 +43,15 @@ class AdminController extends Controller
                    ->where('password','like',md5($request->password));
         if($vUs->count() == 1){
             session()->put('user',$request->email);
+            session()->put('role','Admin');
             session()->put('error','Succesfully Login');
             //return "Welcome, you are now Logged In...";
             return redirect()->to('/dashboard');
         }else{
             //session()->put('user',$request->email);
             session()->put('error','Email or Password does not matched');
-            return redirect()->to('/login');            
-        } 
+            return redirect()->to('/login');
+        }
     }
 
     public function dashboard(){

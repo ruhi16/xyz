@@ -77,10 +77,10 @@
                 </div>
             @endif
 
-            
+
             <div class="content">
                 <div class="links">
-                <a href="{{ url('home') }}">Home Page</a>                    
+                <a href="{{ url('home') }}">Home Page</a>
                 </div><br><br>
                 <div class="title m-b-md">
                     <b>Hari Narayan Das.</b><br>
@@ -88,10 +88,52 @@
                     Arpan Paul.
                     Mobile: 9635212811<br>
                     Email:  hndas15@gmail.com
-                    
+
+
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal Starts -->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- Modal ends -->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+
                 </div>
 
-            
+
             </div>
         </div>
     </body>

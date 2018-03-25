@@ -1,6 +1,5 @@
 <?php
 
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,12 +29,9 @@ Route::get('/abcd', function(){
 	return view('settings.abcd');
 });
 
-
-
 Route::get('/test', function () {
     return view('settings.test');
 });
-
 
 Route::post('/register-submit', 'AdminController@registerSubmit');
 Route::post('/login-submit', 'AdminController@loginSubmit');
@@ -43,12 +39,10 @@ Route::post('/login-submit', 'AdminController@loginSubmit');
 Route::group(['middleware' => 'admin'], function(){
 		Route::get('/dashboard', 'AdminController@dashboard');
 
-
 		Route::get('/logout',function(){
 			session()->flush();
 		    return redirect()->to('/home');
 		});
-
 
 
 });
