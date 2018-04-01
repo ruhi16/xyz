@@ -83,7 +83,7 @@
                 <a href="{{ url('home') }}">Home Page</a>
                 </div><br><br>
                 <div class="title m-b-md">
-                    <b>Hari Narayan Das.</b><br>
+                    <b>Hari Narayan Das...</b><br>
                     Mobile: 9635212811<br>
                     Email:  hndas15@gmail.com
 

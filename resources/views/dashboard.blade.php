@@ -28,13 +28,15 @@
 @endforeach
 <table class="table table-bordered">
 <tr>	
-		<th>SL		</th>
+		<th>SL</th>
 		<th>Death Person Name</th>
 		<th>Voter ID</th>
 		<th>Adhaar ID</th>
+		<th>Address</th>
+		<th>GP Name</th>
 		<th>Date of Death</th>
 		<th>Benificiary Name</th>
-		<th>Bn. Voter ID</th>
+		{{--  <th>Bn. Voter ID</th>  --}}
 		<th>Bn. Adhaar ID</th>
 		<th>Amount</th>
 		<th>Received Date</th>
@@ -43,7 +45,17 @@
 @foreach($records as $record)
 	<tr>
 		<td>{{ $record->id }}</td>
-		<td>{{ $record->id }}</td>
+		<td>{{ $record->dpname }}</td>
+		<td>{{ $record->dpvoterid }}</td>
+		<td>{{ $record->dpadhaarid }}</td>
+		<td>{{ $record->addr }}</td>
+		<td>{{ $record->dpgp }}</td>
+		<td>{{ $record->dpdeathdt }}</td>
+		<td>{{ $record->bnname }}</td>
+		<td>{{ $record->bnadhaarid }}</td>
+		<td>{{ $record->amount }}</td>
+		<td>{{ $record->paydt }}</td>
+		<td><a href="#" class="btn btn-primary">Edit</a></td>
 	</tr>
 @endforeach
 
