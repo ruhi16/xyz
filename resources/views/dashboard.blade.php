@@ -8,8 +8,10 @@
 @section('content')
 <h1>Dashboard</h1>
 
+<a href="{{ url('/records') }}" class="btn btn-success pull-right">Add New Record</a>
+<br>
 
-<table class="table table-bordered">
+{{--  <table class="table table-bordered">
 <tr>	
 		<th>Name		</th>
 		<th>Email		</th>
@@ -25,7 +27,7 @@
 		<td>{{'asdf'}}</td>
 		<td>{{session()->get('role')}}</td>
 	</tr>
-@endforeach
+@endforeach  --}}
 <table class="table table-bordered">
 <tr>	
 		<th>SL</th>

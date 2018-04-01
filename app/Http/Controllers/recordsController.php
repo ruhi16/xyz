@@ -36,7 +36,7 @@ class recordsController extends Controller
 
 
         // echo "Hello:".$request->dpname;
-        return back();
+        return redirect()->to('/dashboard');
 
     }
 }
