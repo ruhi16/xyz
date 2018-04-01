@@ -6,9 +6,10 @@
 @endsection
 
 @section('content')
-<h1>Home Page</h1>
+<h1>Murshidabad Jiaganj Block</h1>
+<h2>Samabathy Prakalpo</h2>
 
-	@include('layouts.caraosal')
+	{{--  @include('layouts.caraosal')  --}}
 
 
 

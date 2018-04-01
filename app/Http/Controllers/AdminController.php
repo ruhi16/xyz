@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use App\User;
+use App\Record;
 
 use App\Http\Requests\LoginValidation;
 use App\Http\Requests\RegisterValidation;
@@ -56,6 +57,11 @@ class AdminController extends Controller
 
     public function dashboard(){
         $users = User::all();
-        return view('/dashboard')->with('users', $users);
+        $records = Record::all();
+
+        return view('/dashboard')
+            ->with('users', $users)
+            ->with('records', $records)
+            ;
     }
 }

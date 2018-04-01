@@ -26,6 +26,27 @@
 		<td>{{session()->get('role')}}</td>
 	</tr>
 @endforeach
+<table class="table table-bordered">
+<tr>	
+		<th>SL		</th>
+		<th>Death Person Name</th>
+		<th>Voter ID</th>
+		<th>Adhaar ID</th>
+		<th>Date of Death</th>
+		<th>Benificiary Name</th>
+		<th>Bn. Voter ID</th>
+		<th>Bn. Adhaar ID</th>
+		<th>Amount</th>
+		<th>Received Date</th>
+		<th>Action</th>
+</tr>
+@foreach($records as $record)
+	<tr>
+		<td>{{ $record->id }}</td>
+		<td>{{ $record->id }}</td>
+	</tr>
+@endforeach
+
 </table>
 
 

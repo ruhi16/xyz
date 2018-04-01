@@ -17,8 +17,11 @@
 
 
 
-
-
+{{--  ===================== datepicker =========================  --}}
+  <link rel="stylesheet" href="{{url('/datepicker/jquery-ui.css')}}">
+  <script src="{{url('/datepicker/jquery-ui.js')}}"></script>
+ 
+{{--    --}}
 
 
 

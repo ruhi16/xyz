@@ -39,6 +39,9 @@ Route::post('/login-submit', 'AdminController@loginSubmit');
 Route::group(['middleware' => 'admin'], function(){
 		Route::get('/dashboard', 'AdminController@dashboard');
 
+		Route::get('/records', 'recordsController@records');
+		Route::post('/records-submit', 'recordsController@recordsSubmit');
+
 		Route::get('/logout',function(){
 			session()->flush();
 		    return redirect()->to('/home');
