@@ -52,6 +52,7 @@
 					<th>GP Name</th>
 					<th>Date of Death</th>
 					<th>Benificiary Name</th>
+					<th>Relationship</th>
 					{{--  <th>Bn. Voter ID</th>  --}}
 					<th>Bn. Adhaar ID</th>
 					<th>Amount</th>
@@ -66,14 +67,15 @@
 					<td>{{ $record->dpname }}</td>
 					<td>{{ $record->dpvoterid }}</td>
 					<td>{{ $record->dpadhaarid }}</td>
-					<td>{{ $record->addr }}</td>
+					<td>{{ $record->dpaddr }}</td>
 					<td>{{ $record->dpgp }}</td>
 					<td>{{ $record->dpdeathdt }}</td>
 					<td>{{ $record->bnname }}</td>
+					<td>{{ $record->bnrelation }}</td>
 					<td>{{ $record->bnadhaarid }}</td>
 					<td>{{ $record->amount }}</td>
 					<td>{{ $record->paydt }}</td>
-					<td><a href="#" class="btn btn-primary">Edit</a></td>
+					<td><a href="{{ url('/records-edit', [$record->id])}}" class="btn btn-primary">Edit</a></td>
 				</tr>
 			@endforeach
 			</tbody>

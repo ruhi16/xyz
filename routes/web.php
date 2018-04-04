@@ -42,6 +42,10 @@ Route::group(['middleware' => 'admin'], function(){
 		Route::get('/records', 'recordsController@records');
 		Route::post('/records-submit', 'recordsController@recordsSubmit');
 
+		Route::get('/records-edit/{record_id}','recordsController@recordsEdit');
+		Route::post('/recordsedit-submit', 'recordsController@recordsEditSubmit');
+
+
 		Route::get('/logout',function(){
 			session()->flush();
 		    return redirect()->to('/home');
