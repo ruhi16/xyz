@@ -46,7 +46,7 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 54px;
             }
 
             .links > a {
@@ -79,15 +79,16 @@
 
 
             <div class="content">
-                <div class="links">
-                <a href="{{ url('home') }}">Home Page</a>
-                </div><br><br>
+                <br><br>
                 <div class="title m-b-md">
-                    <b>Hari Narayan Das...</b><br>
+               
+                    <b>Hari Narayan Das...</b><br><br>
                     Mobile: 9635212811<br>
                     Email:  hndas15@gmail.com
-
-
+                
+                <div class="links">
+                    <a href="{{ url('home') }}">Home Page</a>
+                </div>
 
 
 

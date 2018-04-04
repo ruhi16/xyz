@@ -35,7 +35,7 @@ Route::get('/test', function () {
 
 Route::post('/register-submit', 'AdminController@registerSubmit');
 Route::post('/login-submit', 'AdminController@loginSubmit');
-
+ 
 Route::group(['middleware' => 'admin'], function(){
 		Route::get('/dashboard', 'AdminController@dashboard');
 
